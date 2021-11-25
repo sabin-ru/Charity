@@ -79,10 +79,10 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
       }
 
       body {
-        background: rgb(248, 211, 2);
+        background: url(./background1.jpg);
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
-        color: rgb(105, 103, 103);
+        color: rgb(12, 11, 11);
         margin: 0;
         padding: 0;
       }
@@ -137,7 +137,7 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
 
 
       .class1{
-    background-color: rgb(220, 253, 29);
+    background-color: rgb(253, 238, 29);
     height: 500px;
     background-size: 70px;
 
@@ -185,15 +185,17 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
 .class8{
     font-size: 50px;
     font-weight: 100px;
+    margin-top: 10%;
     font: oblique;
     margin-left: 15%;
-    color: rgb(250, 153, 153);
+    color: rgb(252, 248, 248);
 }
 .class9{
     font-size: 50px;
     font-weight: 100px;
+    margin-top: 1%;
     font: oblique;
-    color: rgb(255, 144, 144);
+    color: rgb(255, 254, 254);
 }
 .class10{
     margin-left: 15%;
@@ -313,11 +315,7 @@ footer{
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
-  <div class="class20">
-    <footer>
-        <p class="class19">Copyright 2021 </p>
-    </footer>
-</div>
+
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -338,6 +336,123 @@ footer{
       },
     });
   </script>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <title>Swiper demo</title>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+      />
+      <!-- Link Swiper's CSS -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+  
+      <!-- Demo styles -->
+      <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+  
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/916723FC-1290-BE4A-9CED-0303760EC887/main.js" charset="UTF-8"></script></head>
+  
+    <body>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="charity1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="charity9.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="class20">
+        <footer>
+            <p class="class19">Copyright 2021 @AFRICA WETU</p>
+            
+        </footer>
+    </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+    </body>
+  </html>
 
 </body>
 </html>
