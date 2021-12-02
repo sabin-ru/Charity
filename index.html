@@ -27,12 +27,12 @@
 
  .state2{
      font-style: italic;
-     margin-left: 25%;
+     margin-left: 15%;
      margin-top: -30%;
  }
  .state3{
    margin-top: -1%;
-   margin-left: 25%;
+   margin-left: 15%;
  }
  .state4{
      width: 150px;
@@ -60,15 +60,15 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
     font-weight: 100;
     font-style: oblique;
     margin-top: -25%;
-    margin-left: 25%;
+    margin-left: 15%;
 
 }
 
 .state7{
- margin-top: 5%;
-
-
+  margin-top: -8%;
 }
+
+
 
 
 
@@ -90,7 +90,7 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
       .swiper {
         width: 100%;
         height: 100%;
-        margin-top: 800px;
+        margin-top: 70px;
         
         /* opacity: 0.7; */
       }
@@ -119,6 +119,7 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        margin-top: 50px;
       }
 
       .swiper-slide img {
@@ -157,12 +158,12 @@ box-shadow: 0 3px 1px rgb(94, 94, 250);
 .class3{
     
     margin-left: 50%;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
     background-color: white;
     border-style: groove;
-    height: 300px;
+    height: 600px;
     width: 40%;
-    margin-top: 200px;
+    margin-top: 80px;
 
 }
 
@@ -271,6 +272,32 @@ footer{
      text-align: center;
      color: white;
  }
+
+ .header{
+   background-color: black;
+
+    width: 70%;
+    color: white;
+    height: 10%;
+    margin-top: 100px;
+    text-decoration: none;
+
+  
+}
+.navigation-list a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+   
+}
+.navigation-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+
+
+}
     </style>
 
 </head>
@@ -279,15 +306,35 @@ footer{
 
       <h1 class="class2">AFRICA WETU</h1>
       <p4 class="class8">Donate to help famillies in need</p4>
+      <p5 class="class9"><marquee behavior="altenate" direction="right" scrollamount="20">Our charity will save </marquee></p5>
+      <div class="header">
+        <nav class="menu">
+        <ul>
+            <div class="navigation-list">
+            
+            <li class="navigation-list"><a href="character1.html">Home</a></li>
+            <li class="navigation-list"><a href="character2.html">about</a><li>
+            
+            <li class="navigation-list"><a href="character5.html">Donate</a></li>
+            <li class="navigation-list"><a href="character6.html">sign up</a></li>
+            <li class="navigationlist"><a href="character7.html">Sign in</a></li>
+            </div>
+        </ul>
+    </nav>
     
-      <p4 class="class9"><marquee behavior="altenate" direction="right" scrollamount="20">Our charity will save </marquee></p4>
+</div>
+     </div>
+
+
+     
       <div class="class3">
           <p1 class="class4">When you give, you provide<br> direct support to your brother<br>or sister you share the same continent.<br> Togeher we share Africa.</p1><br><br><br>
               <p2 class="class5">Many People in African countries are in need of help<br>like Ethiopia, Somalia,... </p2><br><br>
               <img src="poverty2.jpg" alt="in need of help" class="class6"> <br><br>
           <p3 class="class7">Your prayers and support will make so much difference. <br>Please give a vital gift today!</p3>
-        
-      </div>
+        </div>
+
+     
       <div class="state7">
         <h1 class="state2">Donation amount</h1>
         
@@ -300,9 +347,15 @@ footer{
             <button class="state4">250%</button>
             <button class="state4">500%</button>
         </div>
+
+
       
     </div>
-  </div>
+
+    <div class="state8">
+      <p class="state9"></p>
+    </div>
+ 
  <!-- Swiper -->
  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
@@ -311,8 +364,7 @@ footer{
       <div class="swiper-slide">Achild Kenya ensures that street children get<br> access to quality food through a local <br>pantry set up to get food from local <br>and international donors. This ensures <br>that we serve as many children as possible.<br> WE need your help in donation to reach more<br> children in Kenya.</div>
      
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+   
     <div class="swiper-pagination"></div>
   </div>
 
@@ -330,12 +382,11 @@ footer{
         el: ".swiper-pagination",
         clickable: true,
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+     
     });
   </script>
+ 
+
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -359,24 +410,19 @@ footer{
           height: 100%;
         }
   
-        body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
-        }
+       
+        
   
         .swiper {
           width: 100%;
-          padding-top: 50px;
+          padding-top: 0px;
           padding-bottom: 50px;
+
         }
   
         .swiper-slide {
           background-position: center;
-          background-size: cover;
+         
           width: 300px;
           height: 300px;
         }
@@ -436,7 +482,7 @@ footer{
       <script>
         var swiper = new Swiper(".mySwiper", {
           effect: "coverflow",
-          grabCursor: true,
+        
           centeredSlides: true,
           slidesPerView: "auto",
           coverflowEffect: {
@@ -445,14 +491,19 @@ footer{
             depth: 100,
             modifier: 1,
             slideShadows: true,
+            spaceBetween: 30,
           },
+          autoplay: {
+          delay: 2500, 
+          disableOnInteraction: false,
+        },
+          
           pagination: {
             el: ".swiper-pagination",
           },
         });
       </script>
-    </body>
-  </html>
+   
 
 </body>
 </html>
